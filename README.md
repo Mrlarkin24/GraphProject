@@ -22,7 +22,7 @@ When it is fully downloaded navigate to the GraphProject folder and enter:
 
 # ScreenShots
 
-![alt text](https://raw.githubusercontent.com/Mrlarkin24/GraphProject/master/Capture.png)
+![alt text](https://raw.githubusercontent.com/Mrlarkin24/GraphProject/master/Capture.PNG)
 
 # Technologies
 
