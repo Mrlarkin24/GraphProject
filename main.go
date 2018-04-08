@@ -16,7 +16,7 @@ func main() {
 
 	//For loop so you dont have to restart the code each time
 	for regular != "" && userString != "" {
-		fmt.Println("\nLEAVE BOTH USER INPUT BLANK TO EXIT PROGRAM!")
+		fmt.Println("\nLEAVE BOTH USER INPUTS BLANK TO EXIT PROGRAM!")
 		fmt.Println("--------------")
 		fmt.Println("| Main Menu |")
 		fmt.Println("--------------")
