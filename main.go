@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	//links the other files to main
+	L "../GraphProject/lib"
 )
 
 func main() {
@@ -25,4 +27,8 @@ func main() {
 
 	fmt.Println("Regular: ", regular)
 	fmt.Println("User String: ", userString)
+
+	//Calls the function Intopost in shunt.go
+	fmt.Println("Postfix: ", L.Intopost(regular))
+
 }
