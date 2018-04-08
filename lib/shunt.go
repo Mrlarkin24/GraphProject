@@ -1,9 +1,13 @@
 package shunt
 
+import (
+	"fmt"
+)
+
 //Intopost called by main
 func Intopost(infix string) string {
 	//Keeps track of the special characters and sets their precedent
-	specials := map[rune]int{'*': 10, '.': 9, '|': 8}
+	specials := map[rune]int{'*': 10, '+': 9, '.': 8, '|': 7}
 
 	//Initialises the runes as empty
 	postfix, s := []rune{}, []rune{}
@@ -35,6 +39,9 @@ func Intopost(infix string) string {
 		postfix = append(postfix, s[len(s)-1])
 		s = s[:len(s)-1]
 	}
+
+	fmt.Println("\nInfix:   ", infix)
+	fmt.Println("Postfix: ", string(postfix))
 
 	return string(postfix)
 }

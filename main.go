@@ -18,17 +18,15 @@ func main() {
 	fmt.Println("Enter Regular Expression:")
 	scanner.Scan()
 	regular := scanner.Text()
-	fmt.Println("")
 
-	fmt.Println("Enter String:")
+	fmt.Println("\nEnter String:")
 	scanner.Scan()
 	userString := scanner.Text()
-	fmt.Println("")
 
-	fmt.Println("Regular: ", regular)
+	//fmt.Println("\nRegular: ", regular)
 	fmt.Println("User String: ", userString)
 
-	//Calls the function Intopost in shunt.go
-	fmt.Println("Postfix: ", L.Intopost(regular))
+	//Calls the function Intopost in shunt.go when it returns it calls Pomatch in rega.go
+	fmt.Println("\nMatch: ", L.Pomatch(L.Intopost(regular), userString))
 
 }
