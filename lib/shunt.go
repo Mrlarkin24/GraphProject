@@ -5,7 +5,7 @@ import (
 )
 
 //Intopost called by main
-func Intopost(infix string) string {
+func Intopost(infix string) string { //function to convert inflix to postfix
 	//Keeps track of the special characters and sets their precedent
 	specials := map[rune]int{'*': 10, '+': 9, '.': 8, '|': 7}
 
@@ -35,8 +35,12 @@ func Intopost(infix string) string {
 		}
 	}
 
+	//when the stacks length is greater than 0
 	for len(s) > 0 {
+		//Appends the top element of the stack to postfix
 		postfix = append(postfix, s[len(s)-1])
+
+		//Removes the top element from the stack
 		s = s[:len(s)-1]
 	}
 

@@ -14,6 +14,7 @@ func main() {
 
 	scanner := bufio.NewScanner(os.Stdin)
 
+	//For loop so you dont have to restart the code each time
 	for regular != "" && userString != "" {
 		fmt.Println("\nLEAVE BOTH USER INPUT BLANK TO EXIT PROGRAM!")
 		fmt.Println("--------------")
@@ -28,6 +29,7 @@ func main() {
 		scanner.Scan()
 		userString := scanner.Text()
 
+		//if and else to stop the other files running if the user does enter anything
 		if regular == "" && userString == "" {
 			fmt.Println("Goodbye!")
 			os.Exit(0)

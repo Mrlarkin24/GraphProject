@@ -4,12 +4,14 @@ import (
 	"fmt"
 )
 
+// Struct to store state
 type state struct {
 	symbol rune
 	edge1  *state
 	edge2  *state
 }
 
+// Struct to store fragment of NFA
 type nFrag struct {
 	initial *state
 	accept  *state
